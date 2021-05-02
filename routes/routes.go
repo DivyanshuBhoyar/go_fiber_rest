@@ -8,3 +8,7 @@ import (
 func RootRoute(route fiber.Router) {
 	route.Get("/ping", controllers.Pong)
 }
+
+func ProductRoutes(route fiber.Router) {
+	route.Post("/", controllers.AddProduct)
+}
